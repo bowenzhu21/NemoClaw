@@ -115,7 +115,7 @@ impl Repo {
             "nemoclaw-provider",
             "openshell-provider",
             "fabric-provider",
-            "nemoclaw-onboarding",
+            "nemoclaw-unrelated",
         ] {
             write(
                 dir.path(),
@@ -281,7 +281,7 @@ fn documentation_other_workflows_and_packages_outside_the_live_build_skip_live_s
         ("docs/guide.md", Some("# Changed\n")),
         (".github/workflows/images.yml", Some("name: changed\n")),
         (
-            "crates/nemoclaw-onboarding/src/lib.rs",
+            "crates/nemoclaw-unrelated/src/lib.rs",
             Some("pub fn changed() {}\n"),
         ),
     ]);
